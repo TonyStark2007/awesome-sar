@@ -5,12 +5,14 @@ A curated list of awesome SAR software, libraries, and resources.
 Inspired by [awesome-python](https://github.com/vinta/awesome-python).
 
 - [Awesome SAR](#awesome-sar)
+    - [General](#general)
     - [InSAR Processing Software](#insar-processing-software)
     - [PolSAR Processing Software](#polsar-processing-software)
     - [Time Series Analysis Software](#time-series-analysis-software)
     - [Tropospheric Noise Correction Software](#tropospheric-noise-correction-software)
     - [Geospatial Tools](#geospatial-tools)
     - [GitHub Repos](#radar-related-github-repos)
+    - [Image processing libraries](#relevant-image-processing-libraries)
 - [Resources](#resources)
     - [Data Archives](#data-archives)
     - [Websites](#websites)
@@ -18,16 +20,22 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python).
 - [Contributing](#contributing)
 
 - - -
+    
+## General
+Software capable of multiple processing steps
+
+* [SNAP](http://step.esa.int/main/toolboxes/snap/) - Sentinel Application Platform.
+* [Orfeo Toolbox (OTB)](https://www.orfeo-toolbox.org/) - Open Source processing of remote sensing images ([github](https://github.com/orfeotoolbox/OTB), [Cookbook](https://www.orfeo-toolbox.org/CookBook/recipes/sarprocessing.html): [SAR Processing](https://www.orfeo-toolbox.org/CookBook/recipes/sarprocessing.html), [Guide](http://orfeo-toolbox.org/SoftwareGuide/))
+* [SARbian](https://eo-college.org/sarbian/) - free and open SAR operating system 
 
 ## InSAR Processing Software
 
 *Software and libraries for interferometric synthetic aperture radar (InSAR)*
 
-* [GMT5SAR](http://gmt.soest.hawaii.edu/projects/gmt5sar) - InSAR processing system based on GMT.
-* [ISCE](http://winsar.unavco.org/isce.html) - InSAR Scientific Computing Environment.
-* [SNAP](http://step.esa.int/main/toolboxes/snap/) - Sentinel Application Platform.
+* [GMT5SAR](https://topex.ucsd.edu/gmtsar/) - InSAR processing system based on GMT. ([page for developers](http://gmt.soest.hawaii.edu/projects/gmt5sar))
+* [ISCE](http://winsar.unavco.org/software/isce) - InSAR Scientific Computing Environment.
 * [Doris](http://doris.tudelft.nl/) - Delft object-oriented radar interferomtric software.
-* [Gamma](http://www.gamma-rs.ch/no_cache/software.html) - Gamma Remote Sensing SAR and Interferometry Software.
+* [Gamma ($$)](http://www.gamma-rs.ch/no_cache/software.html) - Gamma Remote Sensing SAR and Interferometry Software.
 
 ## PolSAR Processing Software
 
@@ -41,10 +49,10 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python).
 *Software and libraries for multitemporal/time series InSAR analysis*
 
 * [GIAnT](http://earthdef.caltech.edu/projects/giant/wiki) - Generic InSAR Analysis Toolbox.
+* [MintPy](https://github.com/insarlab/MintPy) - Miami INsar Time-series software in PYthon.
 * [PyRate](https://github.com/GeoscienceAustralia/PyRate) - A Python tool for Rate and Time-series Estimation
-* [PySAR](https://github.com/hfattahi/PySAR) - InSAR time-series analysis in python.
 * [SARPROZ](http://www.sarproz.com/) - The SAR PROcessing tool by periZ 
-* [StaMPS/MTI](http://homepages.see.leeds.ac.uk/~earahoo/stamps/) - Stanford Method for Persistent Scatterers
+* [StaMPS/MTI](http://homepages.see.leeds.ac.uk/~earahoo/stamps/) - Stanford Method for Persistent Scatterers - [git-version](https://github.com/dbekaert/stamps)
 
 ## Tropospheric Noise Correction Software
 
@@ -61,6 +69,8 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python).
 * [ASF Map Ready](https://github.com/asfadmin/ASF_MapReady) - MapReady Remote Sensing Tool Kit
 * [GDAL](https://github.com/OSGeo/gdal) - Geospatial Data Abstraction Library
 * [GMT](http://gmt.soest.hawaii.edu/projects/gmt) - Generic Mapping Tools
+* [QGIS](https://www.qgis.org/)
+* [GRASS](https://grass.osgeo.org/) - Geographic Resources Analysis Support System),
 
 ## Radar Related GitHub Repos
 
@@ -72,17 +82,20 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python).
     * [SentinelSat](https://github.com/ibamacsr/sentinelsat) - Search and download Sentinel images from the command line or with the Python API.
 
 * Software and Utilities
+    * [ARIA-tools](https://github.com/aria-tools) - Tools to manipulate (download, cropping, stitching, time-series preparation) [ARIA products](http://aria-products.jpl.nasa.gov/)
     * [PyRAT](https://github.com/birgander2/PyRAT) - General purpose SAR postprocessing framework
     * [adore-doris](https://github.com/bosmanoglu/adore-doris)
     * [RITSAR](https://github.com/dm6718/RITSAR)
     * [ISCE_utils](https://github.com/EJFielding/ISCE_utils)
-    * [s1tbx](https://github.com/senbox-org/s1tbx)
+    * [s1tbx](https://github.com/senbox-org/s1tbx) - part of SNAP
     * [PySAR](https://github.com/bminchew/PySAR)
     * [ROI_PAC-Sentinel1](https://github.com/RaphaelGrandin/ROI_PAC-Sentinel1)
     * [insar_scripts](https://github.com/scottyhq/insar_scripts)
-    * [RapidSAR](https://github.com/KarstenSpaans/RapidSAR)
-    * [gmtsar2stamps](https://github.com/xitong123/gmtsar2stamps)
+    * [RapidSAR](https://github.com/KarstenSpaans/RapidSAR) 
+    * [gmtsar2stamps](https://github.com/xitong123/gmtsar2stamps) - Using GMTSAR as InSAR pre-processor for StaMPS
     * [pygmtsar](https://github.com/bakerunavco/pygmtsar) - Python scripts for GMTSAR processing
+    * [snap2stamps](https://github.com/mdelgadoblasco/snap2stamps) - Using SNAP as InSAR pre-processor for StaMPS
+    * [ISCE stack2stamps](http://winsar.unavco.org/software/isce) - Using ISCE (src/contrib/timeseries/stack2stamps) as InSAR pre-processor for StaMPS
     * [GIPhT](https://github.com/feigl/gipht) - General Inversion of Phase Technique
     * [RaySAR](https://github.com/StefanJAuer/RaySAR) - 3D Synthetic Aperture Radar (SAR) Simulator
     * [kite](https://github.com/pyrocko/kite) - Tectonic displacement modelling, quadtree subsampling and covariance analysis
@@ -93,12 +106,21 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python).
     * [oldLinuxSetup](https://github.com/piyushrpt/oldLinuxSetup) - Setup python environment using anaconda on old linux machines
     * [ElCaptanSetup](https://github.com/piyushrpt/ElCapitanSetup) - Instructions for setting up an OS X El Capitan machine from scratch
 
+## Relevant Image processing libraries
+
+* [OpenCV](http://opencv.org/)
+* [Scikit-Image](http://scikit-image.org/)
+* [Insight Segmentation and Registration Toolkit (ITK)](https://itk.org/) - open-source, cross-platform system that provides developers with an extensive suite of software tools for image analysis 
+* [Spectral Python (SPy)](https://www.spectralpython.net/index.html) - Python module for processing hyperspectral image data
+
+
 # Resources
 
 Where to discover new SAR libraries and resources.
 
 ## Data Archives
 * [ASF](https://www.asf.alaska.edu/) - Alaska Satellite Facility
+* [ARIA-products](http://aria-products.jpl.nasa.gov/) - Standard products of the Advanced Rapid Imaging and Analysis (ARIA) Project for Natural Hazards
 * [DLR Geohazards Supersites](https://supersites.eoc.dlr.de/) - TerraSAR-X Geohazard Supersites EO Data Gateway
 * [ESA Virtual Archive 4](http://eo-virtual-archive4.esa.int/) - Geohazard Supersites and Natural Laboratories Virtual Archive
 * [SciHub](https://scihub.copernicus.eu/) - Sentinel Scientific Data Hub
@@ -108,15 +130,17 @@ Where to discover new SAR libraries and resources.
 
 * Forums 
     * [ISCE Forum](http://earthdef.caltech.edu/projects/isce_forum/boards)
+    * [MintPy Forum](https://groups.google.com/forum/#!forum/mintpy)
     * [SNAP Forum](http://forum.step.esa.int)
     * [StaMPS/MAINSAR Forum](https://groups.google.com/forum/#!forum/mainsar)
     * [TRAIN Forum](https://groups.google.com/forum/#!forum/TRAIN_support)
 
 * Training, Tutorials, Classes & Other Online Educational Material
     * [SAREDU](https://saredu.dlr.de/)
+    * [EO-College](https://eo-college.org/landingpage)
     * [UNAVCO Short Courses](http://www.unavco.org/education/advancing-geodetic-skills/short-courses/2016/2016.html)
     * [Online Class on Microwave Remote Sensing](https://radar.community.uaf.edu/)
-    * [How to do InSAR on ESA's Geoharzard Exploitation Platform](http://www.video.ethz.ch/events/2017/esa.html)
+    * [How to do InSAR on ESA's Geohazard Exploitation Platform](http://www.video.ethz.ch/events/2017/esa.html)
 
 * Processing Recipes for Automatic Product Generation 
     * [ASF Data Recipes](https://www.asf.alaska.edu/data-tools/data-recipes/)
@@ -126,7 +150,11 @@ Where to discover new SAR libraries and resources.
     * [WInSAR](http://winsar.unavco.org)
     * [Supersites](http://supersites.earthobservations.org/)
     * [Summary of Available SAR Calibration Targets](http://sarcv.ceos.org/targets/)
-    
+
+For more software refer to the 
+    - [SARbian list](https://eo-college.org/sarbian/)
+    - [List of geographic information systems software](https://www.wikiwand.com/en/List_of_geographic_information_systems_software).
+
 ## Twitter
 
 * [@InSARinfo](https://twitter.com/insarinfo)
